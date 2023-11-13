@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="carrito-icono" onclick="mostrarCarrito()">
+        <i class="fas fa-shopping-cart"></i>
+        <img src="carro.png" alt="">
+        <span id="contador-carrito">0</span>
+    </div>  
+    
+<section>
+    <section id="pantalones">
+        <h2>Pantalones</h2>
+        <div class="gallery-container">
+            <!-- Agrega productos de pantalones aquí -->
+            <div class="item">
+                <img src="pexels-tobi-631986.jpg" alt="Pantalones 1">
+                <p>Pantalones 1</p>
+                <p class="precio">$39.99</p>
+                <button onclick="agregarAlCarrito('Pantalones 1', 39.99)">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <img src="pexels-tobi-631986.jpg" alt="Pantalones 1">
+                <p>Pantalones 1</p>
+                <p class="precio">$39.99</p>
+                <button onclick="agregarAlCarrito('Pantalones 1', 39.99)">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <img src="pexels-melvin-buezo-2529148.jpg" alt="Pantalones 2">
+                <p>Pantalones 2</p>
+                <p class="precio">$49.99</p>
+                <button onclick="agregarAlCarrito('Pantalones 2', 49.99)">Agregar al carrito</button>
+            </div>
+            <!-- Agrega más productos de pantalones según sea necesario -->
+        </div>
+    </section>
+</section>
+<section>
+    <section id="sudaderas">
+        <h2>Sudaderas</h2>
+        <div class="gallery-container">
+            <!-- Agrega productos de sudaderas aquí -->
+            <div class="item">
+                <img src="pexels-jacob-sierra-15883360.jpg" alt="Sudadera 1">
+                <p>Sudadera 1</p>
+                <p class="precio">$29.99</p>
+                <button onclick="agregarAlCarrito('Sudadera 1', 29.99)">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <img src="sudadera2.jpg" alt="Sudadera 2">
+                <p>Sudadera 2</p>
+                <p class="precio">$39.99</p>
+                <button onclick="agregarAlCarrito('Sudadera 2', 39.99)">Agregar al carrito</button>
+            </div>
+            <!-- Agrega más productos de sudaderas según sea necesario -->
+        </div>
+    </section>
+</section>
+    <section id="accesorios">
+        <h2>Accesorios</h2>
+        <div class="gallery-container">
+            <!-- Agrega productos de accesorios aquí -->
+            <div class="item">
+                <img src="accesorio1.jpg" alt="Accesorio 1">
+                <p>Accesorio 1</p>
+                <p class="precio">$9.99</p>
+                <button onclick="agregarAlCarrito('Accesorio 1', 9.99)">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <img src="accesorio2.jpg" alt="Accesorio 2">
+                <p>Accesorio 2</p>
+                <p class="precio">$14.99</p>
+                <button onclick="agregarAlCarrito('Accesorio 2', 14.99)">Agregar al carrito</button>
+            </div>
+            <!-- Agrega más productos de accesorios según sea necesario -->
+        </div>
+    </section>
+
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total-carrito">0.00</span></p>
+        <button onclick="comprar()">Comprar</button>
+    </section>
+
+    <!-- Aquí puedes agregar la sección de pago y otros elementos según sea necesario -->
+
+    <script src="script.js"></script>
+</body>
+</html>
