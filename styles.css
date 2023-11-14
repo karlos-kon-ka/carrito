@@ -1,14 +1,12 @@
+/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
-    
     margin: 0;
     padding: 0;
-    background-image: url(pexels-tembela-bohle-1884573.jpg);
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
+    background-color: #62ab67;
 }
 
+/* Encabezado */
 header {
     background-color: #343a40;
     color: #ffffff;
@@ -21,6 +19,7 @@ h1 {
     font-size: 2em;
 }
 
+/* Navegación */
 nav {
     margin-top: 10px;
 }
@@ -37,14 +36,16 @@ nav a:hover {
     color: #28a745; /* Color verde */
 }
 
+/* Sección principal */
 section {
-    padding: 40px;
+    padding: 20px;
 }
 
 h2 {
     color: #343a40;
 }
 
+/* Galería de productos */
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
@@ -60,7 +61,7 @@ h2 {
     text-align: center;
 }
 
-
+/* Botones */
 button {
     background-color: #007bff;
     color: #ffffff;
@@ -74,21 +75,26 @@ button {
 button:hover {
     background-color: #0056b3; /* Color azul más oscuro */
 }
-#pantalones{
+
+/* Categorías de productos */
+#pantalones, #sudaderas, #accesorios {
+    border-radius: 15px;
+    border: solid 1.5px white;
+}
+
+#pantalones {
     background-color: #007bffe1;
-    border-radius: 15px;
-    border: solid 1.5px white;
 }
-#sudaderas{
+
+#sudaderas {
     background-color: #28a746de;
-    border-radius: 15px;
-    border: solid 1.5px white;
 }
-#accesorios{
+
+#accesorios {
     background-color: rgba(255, 0, 0, 0.793);
-    border-radius: 15px;
-    border: solid 1.5px white;
 }
+
+/* Carrito */
 #carrito {
     margin-top: 40px;
     background-color: #28a745; /* Color verde */
@@ -98,6 +104,7 @@ button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Lista de carrito */
 ul {
     list-style: none;
     padding: 0;
@@ -109,19 +116,21 @@ li {
     margin-bottom: 10px;
 }
 
+/* Precio en carrito */
 .precio {
     color: #ffffff;
 }
-img{
+
+/* Imágenes */
+img {
     max-width: 100%;
     max-height: 100%;
-    width: 20vh;
-    height: 20vh;
+    width: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
-
-/* Estilos adicionales (puedes ajustar según tus necesidades) */
+/* Estilos adicionales */
 #carrito-icono {
     position: fixed;
     top: 10px;
@@ -132,17 +141,41 @@ img{
 }
 
 #carrito-icono img {
-    width: 30px; /* Ajusta el tamaño según sea necesario */
+    width: 30px;
     height: auto;
     margin-right: 5px;
 }
 
 #contador-carrito {
-    background-color: #f00; /* Color de fondo del contador */
-    color: #fff; /* Color del texto del contador */
-    border-radius: 50%; /* Para que el contador tenga forma circular */
-    padding: 5px 8px; /* Espaciado interno del contador */
-    font-size: 12px; /* Tamaño del texto del contador */
-    margin-left: -5px; /* Ajuste fino para la posición */
+    background-color: #f00;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 12px;
+    margin-left: -5px;
 }
 
+/* Reglas de medios para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5em; /* Tamaño de fuente reducido en dispositivos más pequeños */
+    }
+
+    nav a {
+        font-size: 1em; /* Tamaño de fuente reducido en dispositivos más pequeños */
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .item {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #carrito {
+        margin-top: 20px;
+        padding: 10px;
+    }
+}
